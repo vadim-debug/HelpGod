@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DemoDbModelContainer" CdmEntityContainer="DemoDbEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="DemoDbModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CostOrder" ColumnName="CostOrder" />
+          <ScalarProperty Name="SumSale" ColumnName="SumSale" />
+          <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+          <ScalarProperty Name="DateDelievery" ColumnName="DateDelievery" />
+          <ScalarProperty Name="PP_ID" ColumnName="PP_ID" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PointIssues">
+      <EntityTypeMapping TypeName="DemoDbModel.PointIssues">
+        <MappingFragment StoreEntitySet="PointIssues">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producers">
+      <EntityTypeMapping TypeName="DemoDbModel.Producers">
+        <MappingFragment StoreEntitySet="Producers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrder">
+      <EntityTypeMapping TypeName="DemoDbModel.ProductOrder">
+        <MappingFragment StoreEntitySet="ProductOrder">
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="DemoDbModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Producer_ID" ColumnName="Producer_ID" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Sale" ColumnName="Sale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statuses">
+      <EntityTypeMapping TypeName="DemoDbModel.Statuses">
+        <MappingFragment StoreEntitySet="Statuses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
